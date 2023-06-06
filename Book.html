@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/book.css">
+    <title>Booking</title>
+</head>
+
+<body class="main_bg">
+    <div class="form">
+        <div class="form-text">
+            <!-- <h1>Book Now</h1> -->
+            <p>Book Your Tickets know In The Transportation</p>
+        </div>
+        <div class="main-form">
+            <form action="index.php" method="get" >
+                <div>
+                    <span>Your full name ?</span>
+                    <input type="text" name="name" id="name" placeholder="Write your name here..." required>
+                </div>
+                <div>
+                    <span>Your email address ?</span>
+                    <input type="email" name="name" id="name" placeholder="Write your email here..." required> 
+                </div>
+                <div>
+                    <!-- <---this is the select option--->
+                    <span>How many people ?</span>
+                    <select name="people" id="people" required>
+                        <option value=""><---People---></option>
+                        <option value="1">1 People</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4">4 People</option>
+                    </select>
+                    <!-- <---this is the select option--->
+                </div>
+                <div>
+                    <span>What time ?</span>
+                    <input type="text" name="time" id="time" placeholder="Time" required>
+                </div>
+                <div>
+                    <span>What is the date ?</span>
+                    <input type="date" name="date" id="date" placeholder="date" required>
+                </div>
+                <div>
+                    <span>Your phone number ?</span>
+                    <input type="number" name="number" id="number" placeholder="Write your number here..." required>
+                </div>
+
+                <div>
+                    <span>From Where ?</span>
+                    <input type="Text" name="date" id="date" placeholder="City" required>
+                </div>
+
+                <div>
+                    <span>To Where ?</span>
+                    <input type="Text" name="date" id="date" placeholder="City" required>
+                </div>
+
+
+                <div id="submit">
+                    <input type="submit" value="SUBMIT" id="submit">
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+  
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.querySelector('form');
+  
+      form.addEventListener('submit', function(event) {
+        event.preventDefault();
+  
+        // Display a success message
+        const message = document.createElement('p');
+        message.textContent = 'The Ticket Has been Booked successfully !';
+        message.style.color = 'green';
+        form.parentNode.insertBefore(message, form.nextSibling);
+  
+        // Reset the form after submission
+        form.reset();
+      });
+    });
+  </script>
+  
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+body {
+  background-color: #f8f9fa;
+}
+    .app-header {
+    background-color: #2b3035;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .app-header h1 {
+    margin: 0;
+    font-size: 25px;
+    text-align: center;
+  }
+.container {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 32px;
+  text-align: center;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-control {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+#weather-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.weather-card {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  background-color: #7f4bc8;
+  border-radius: 10px;
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  
+}
+
+.card-title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.weather-section {
+  padding: 15px;
+  border-top: 1px solid #e9ecef;
+}
+
+.section-title {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.section-text {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+@media (max-width: 767px) {
+  .weather-card {
+    width: 100%;
+  }
+}
+.table-container {
+margin-top: 40px;
+padding-left: 15px;
+padding-right: 15px;
+background-color: transparent;
+}
+
+#country-weather {
+width: 100%;
+margin-bottom: 20px;
+background-color: #fff;
+border-radius: 20px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#country-weather th:first-child {
+  border-top-left-radius: 20px;
+}
+#country-weather th:last-child {
+  border-top-right-radius: 20px;
+}
+#country-weather th {
+font-weight: bold;
+background-color: #7f4bc8;
+color: #fff;
+padding: 10px;
+text-align: center;
+
+}
+
+#country-weather td {
+padding: 10px;
+text-align: center;
+}
+
+#country-weather tbody tr:nth-child(even) {
+background-color: #f8f9fa;
+}
+
+#country-weather tbody tr:hover {
+background-color: #e9ecef;
+}
